@@ -7,7 +7,7 @@ app.Show = Backbone.Model.extend({
       coverImage: 'img/placeholder.png',
       title: 'Unknown',
       genre: 'Unknown',
-      stars: '★'
+      stars: 0
     }
   }
 });
