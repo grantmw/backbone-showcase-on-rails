@@ -4,17 +4,30 @@
 
 3. What is a serializer in Rails API and why do we need it?
 
-4. Does Backbone have two-way data binding? Explain. 
+4. Does Backbone have two-way data binding? Explain.
 
 5. In views/show.js, what is the el property for an instance of ShowView?
 
+  - Div
+
 6. Why do we return this at the end of the render function in a view?
+
+  - We return 'this' because we want to be able to render the view outside this function - for reasons of scope.
 
 7. Describe the purpose and function of an Underscore template in Backbone.
 
+  - The Underscore template acts sort of like a parital.
+
 8. What's the point of var app = app || {} at the beginning of every .js file?
+
+  - app is usually constructed to hold all the constructors in the app. To make sure all the constructors are in one place in the app, and not in different instances of 'app,' we have the double pipes, saying 'if app exists, set it to app.'
+
 
 9. Why do we not need a template for the ShowcaseView in views/showcase.js?
 
+  - Because we only have one page, and we don't want to recreate new ShowcaseViews.
+
 10. Go to line 248 of backbone.js and take a look at the Backbone.Model
 definition. What is the _.extend statement on line 262 for?
+
+ - The statement adds functionality to the object it is called on. It binds and triggers custom named events.
